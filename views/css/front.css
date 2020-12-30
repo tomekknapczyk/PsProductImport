@@ -1,0 +1,50 @@
+/**
+ * Copyright 2020 Mafisz
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0).
+ * It is available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/AFL-3.0
+ *
+ * @author    Mafisz <mafisz@gmail.com>
+ * @copyright Mafisz
+ * @license   https://opensource.org/licenses/AFL-3.0  Academic Free License (AFL 3.0)
+*/
+
+.mafisz_categories_container{
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mafisz_categories_container > h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+.mafisz_category_container img{
+    max-width: 100%;
+    height: auto;
+}
+
+.mafisz_categories{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 32px;
+}
+
+@media all and (max-width: 992px){
+    .mafisz_categories{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
+@media all and (max-width: 567px){
+    .mafisz_categories{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        gap: 16px;
+    }
+}
